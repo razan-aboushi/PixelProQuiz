@@ -3,7 +3,8 @@
 #### Pixel Pro Company Quiz It is a quiz website that tests candidates to find out their level and skills, and evaluates their knowledge of a specific position through a set of questions related to it.
 
 
-####  This repository is dedicated to the Front-End Quiz, a resource designed to test and improve your knowledge of HTML, CSS, and JavaScript - the core technologies of front-end web development.
+#### This repository is dedicated to the Front-End Quiz, a resource designed to test and improve your knowledge of HTML, CSS, and JavaScript - the core technologies of front-end web development.
+
 
 
 #### The website required to build dynamic registration , login , home, quiz , and result pages.
@@ -18,11 +19,12 @@
 + Figma .
 + Trello .
 
+
 ### Live code of the website : 
 
 * [Live Code](https://bashar-alamoush.github.io/Organization/) .
 
- 
+
 
 ### The mouckup and wireframe "Figma" :
 
@@ -34,7 +36,7 @@
 
 + [Organization Repository](https://github.com/Bashar-AlAmoush/Organization) .
 
- 
+
 
 ### Trello Link :
 

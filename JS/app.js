@@ -86,14 +86,16 @@ form.addEventListener("submit", (e) => {
     );
     isValid = false;
   }
-  if (!validateEmail(email)) {
+  if (!validateEmail(email)) 
+  {
     alert("Email must be a valid email address");
     isValid = false;
   } else if (isEmailTaken(email)) {
     alert("The E-mail already exists");
     isValid = false;
   }
-  if (!validatePhone(phone)) {
+  if (!validatePhone(phone)) 
+  {
     alert("Phone number must be 10 digits long and start with 07");
     isValid = false;
   }

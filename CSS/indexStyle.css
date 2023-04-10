@@ -226,3 +226,31 @@ body {
     justify-content: center;
   }
 }
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar-collapse {
+    justify-content: start;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    justify-content: end;
+  }
+}
+
+
+

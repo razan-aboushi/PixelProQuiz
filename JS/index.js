@@ -1,4 +1,4 @@
-const userInfo = JSON.parse(sessionStorage.getItem("userse"));
+const userInfo = JSON.parse(sessionStorage.getItem("userse")); //If have data in sessions
 
 function renderLoginAndSignUp() {
   const ul = document.getElementById("ul");
@@ -8,8 +8,8 @@ function renderLoginAndSignUp() {
   link1.href = "log-in.html";
   link1.textContent = "Log in";
   listItem1.appendChild(link1);
-
   link1.style.textDecoration = "none";
+
 
   const listItem2 = document.createElement("li");
   const link2 = document.createElement("a");
@@ -21,6 +21,7 @@ function renderLoginAndSignUp() {
   ul.appendChild(listItem1);
   ul.appendChild(listItem2);
 }
+
 const imagePo = document.getElementById("imageP");
 let srcc = "";
 function renderUserNameAndLogOut() {

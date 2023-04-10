@@ -48,6 +48,7 @@ body {
 .cont {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
   top: 3rem;
 }

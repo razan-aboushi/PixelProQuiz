@@ -111,8 +111,7 @@ function renderAnswers() {
     tr.appendChild(td4);
     td4.textContent = `${item.correctAnswer}`;
     tr.style.backgroundColor = `white`;
-    table.style.margin = "6rem";
-    table.style.marginLeft = "16rem";
+
     td3.style.color = item.userAnswer === item.correctAnswer ? "green" : "	red"; // Highlight the user's answer in green if it's correct, and red if it's incorrect
     table.style.color = "black";
   }

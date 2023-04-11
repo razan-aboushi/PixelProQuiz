@@ -29,8 +29,7 @@
   }
   .navbar-nav li a:hover,
   .navbar-nav li.active a {
-    color: black !important;
-    background-color: white !important;
+    color: rgb(47, 157, 201) !important;
     border-radius: 5px !important;
     padding: 5px;
   }

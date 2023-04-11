@@ -1,6 +1,7 @@
 const userInfo = JSON.parse(sessionStorage.getItem("userse")); //If have data in sessions
 
-function renderLoginAndSignUp() {
+function renderLoginAndSignUp() 
+{
   const ul = document.getElementById("ul");
 
   const listItem1 = document.createElement("li");
@@ -24,7 +25,9 @@ function renderLoginAndSignUp() {
 
 const imagePo = document.getElementById("imageP");
 let srcc = "";
-function renderUserNameAndLogOut() {
+
+function renderUserNameAndLogOut() 
+{
   const userName = userInfo.username;
   const ul = document.getElementById("ul");
   const well = document.getElementById("wel");
@@ -41,39 +44,55 @@ function renderUserNameAndLogOut() {
   const listItem2 = document.createElement("li");
   const link2 = document.createElement("a");
   link2.textContent = "Log Out";
-  link2.addEventListener("click", () => {
+
+  link2.addEventListener("click", () =>  //when the user click on the log out , he will back to home page
+  {
     sessionStorage.clear();
     window.location.href = "index.html";
   });
+
   listItem2.appendChild(link2);
   ul.appendChild(listItem2);
 }
 
-if (userInfo) {
+if (userInfo) 
+
+{
   renderUserNameAndLogOut();
-} else {
+} 
+else 
+{
   renderLoginAndSignUp();
 }
 // console.log(userInfo.username);
 
 const button = document.getElementById("submit");
-button.addEventListener("click", function () {
-  if (userInfo) {
+
+button.addEventListener("click", function ()
+ {
+  if (userInfo)
+   {
     window.location.href = "ExamWelcomepage.html";
-  } else {
+  } 
+  else 
+  {
     window.location.href = "registration.html";
   }
 });
+
 let aboutposition = " ";
 let description = "";
 
-function getExamTypeFromLocalStorage() {
+function getExamTypeFromLocalStorage() 
+{
   const user = JSON.parse(sessionStorage.getItem("userse"));
   const positionn = user.position;
   console.log(positionn);
 
   let examType;
-  switch (positionn) {
+
+  switch (positionn)
+   {
     case "2":
       examType = "HTML";
       aboutposition = " HTML Developer";
@@ -82,6 +101,7 @@ function getExamTypeFromLocalStorage() {
       srcc = "Images/HTML.png";
 
       break;
+
     case "3":
       examType = "CSS";
       aboutposition = " Front-End Developer";
@@ -90,6 +110,7 @@ function getExamTypeFromLocalStorage() {
       srcc = "Images/CSS.png";
 
       break;
+
     case "4":
       examType = "JS";
       aboutposition = "JavaScript Developer ";
@@ -97,6 +118,7 @@ function getExamTypeFromLocalStorage() {
       srcc = "Images/JS.png";
 
       break;
+
     default:
       console.log("Invalid position value.");
   }
@@ -108,10 +130,12 @@ console.log(positionnn);
 console.log(aboutposition);
 console.log(description);
 imagePo.src = srcc;
-imagePo.style.width = "400px";
-imagePo.style.height = "500px";
-imagePo.style.marginLeft = "200px";
-function setdata() {
+// imagePo.style.width = "400px";
+// imagePo.style.height = "500px";
+// imagePo.style.marginLeft = "200px";
+imagePo.style.marginBottom = "84px";
+function setdata() 
+{
   const positionn = document.getElementById("aboutp");
   const des = document.getElementById("description");
   const examm = document.getElementById("exam");

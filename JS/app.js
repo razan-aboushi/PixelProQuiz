@@ -12,7 +12,8 @@ const passwordInput = document.getElementById("password");
 const confirmPasswordInput = document.getElementById("confirmpass");
 
 // Validate username without spaces
-function validateUsername(username) {
+function validateUsername(username)
+ {
   return !/\s/.test(username);
 }
 
@@ -49,7 +50,8 @@ function isUsernameTaken(username) {
 }
 
 // Save user data to local storage
-function saveUserData(username, password, email, phone, position) {
+function saveUserData(username, password, email, phone, position) 
+{
   const users = JSON.parse(localStorage.getItem("users") || "[]");
   users.push({ username, password, email, phone, position });
   const userse={ username,password,position,email};
@@ -58,7 +60,8 @@ function saveUserData(username, password, email, phone, position) {
 }
 
 // Handle form submission
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) => 
+{
   e.preventDefault();
 
   // Get form data
@@ -73,14 +76,17 @@ form.addEventListener("submit", (e) => {
   const username = `${firstName.toLowerCase()}-${lastName.toLowerCase()}`;
 
   let isValid = true;
-  if (!validateUsername(username)) {
+  if (!validateUsername(username)) 
+  {
     alert("Username must not contain spaces");
     isValid = false;
-  } else if (isUsernameTaken(username)) {
+  } else if (isUsernameTaken(username)) 
+  {
     alert("Username already exists");
     isValid = false;
   }
-  if (!validatePassword(password)) {
+  if (!validatePassword(password))
+   {
     alert(
       "Password must be at least 8 characters long and contain at least 1 number, 1 uppercase letter, and 1 special character"
     );
@@ -90,7 +96,8 @@ form.addEventListener("submit", (e) => {
   {
     alert("Email must be a valid email address");
     isValid = false;
-  } else if (isEmailTaken(email)) {
+  } else if (isEmailTaken(email)) 
+  {
     alert("The E-mail already exists");
     isValid = false;
   }

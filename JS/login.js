@@ -5,13 +5,15 @@ loginButton.addEventListener("click", (event) => {
   let message = [];
 
   event.preventDefault();
+
   const email = document.getElementById("email1").value.toLowerCase();
   const password = document.getElementById("password1").value;
 
   const users = JSON.parse(localStorage.getItem("users") || "[]");
   const storedData = users.find((user) => user.email.toLowerCase() === email);
   
-  if (storedData && storedData.password === password) {
+  if (storedData && storedData.password === password)
+   {
     // login successful
     const { username, position } = storedData;
     const userse = { username, password, position };

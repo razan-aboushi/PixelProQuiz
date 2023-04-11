@@ -42,7 +42,9 @@ function getExamTypeFromLocalStorage() {
   return examType;
 }
 const examType = getExamTypeFromLocalStorage();
-function result() {
+
+function result() 
+{
   const userName = userInfo.username;
 
   let quizInfo = document.getElementById("quizInfo");
@@ -69,13 +71,7 @@ function result() {
   yo1.src = correctAnswers >= 5 ? `Images/yes.png` : `Images/no.png`;
   yo1.style.width = "200px";
   yo1.style.height = "200px";
-  // quizInfo.appendChild(passOrfail);
-  // passOrfail.textContent = correctAnswers >= 5 ? `Pass` : `Fail`;
-  // passOrfail.style.backgroundColor = correctAnswers >= 5 ? `green` : `red`;
-  // passOrfail.style.padding = `8px 10px 8px 10px`;
-  // passOrfail.style.borderRadius = `5px`;
   quizInfo.style.color = "white";
-  // quizInfo.style.margin = "7rem auto 0px";
   quizInfo.style.padding = "3rem";
   quizInfo.style.borderRadius = "10px";
   quizInfo.style.border = "solid 3px white";
@@ -86,7 +82,8 @@ function result() {
 }
 window.addEventListener("load", result);
 
-function renderAnswers() {
+function renderAnswers() 
+{
   let table = document.getElementById("resulttable");
   table.style = "display: none";
 
@@ -107,7 +104,6 @@ function renderAnswers() {
     td2.textContent = `${item.question}`;
     tr.appendChild(td3);
     td3.textContent = `${item.userAnswer}`;
-
     tr.appendChild(td4);
     td4.textContent = `${item.correctAnswer}`;
     tr.style.backgroundColor = `white`;
@@ -118,10 +114,12 @@ function renderAnswers() {
 }
 renderAnswers();
 
+
 let button = document.getElementById("submit");
 let toggle = false;
 
-function handleButtonClick(event) {
+function handleButtonClick(event)
+ {
   event.preventDefault();
   let table1 = document.getElementById("resulttable");
 
@@ -140,7 +138,8 @@ button.addEventListener("click", handleButtonClick);
 let correctAnswers = 0;
 let incorrectAnswers = 0;
 
-questions.forEach((arr) => {
+questions.forEach((arr) => 
+{
   if (arr.userAnswer === arr.correctAnswer) {
     correctAnswers++;
   } else {

@@ -7,12 +7,14 @@ console.log(HTML);
 console.log(CSS);
 
 
-function getExamTypeFromLocalStorage() {
+function getExamTypeFromLocalStorage() 
+{
   const user = JSON.parse(sessionStorage.getItem("userse"));
   const positionn = user.position;
 
   let examType;
-  switch (positionn) {
+  switch (positionn) 
+  {
     case "2":
       examType = HTML;
       break;
@@ -29,7 +31,8 @@ function getExamTypeFromLocalStorage() {
   return examType;
 }
 
-function shuffleQuestions(array) {
+function shuffleQuestions(array) 
+{
   const shuffledArray = [];
   while (shuffledArray.length < array.length) {
     const randomQuestion = array[Math.floor(Math.random() * array.length)];
@@ -48,7 +51,8 @@ const exam = Shuffle;
 let currentQuestion = 0;
 
 
-function displayQuestion() {
+function displayQuestion() 
+{
   let question = exam[currentQuestion];
   document.getElementById("question-text").innerHTML = question.question;
   document.getElementById("option1").nextSibling.textContent = question.optionA;
@@ -94,14 +98,16 @@ nextButton.addEventListener("click", function () {
 let quizTime = 10 * 60; // 8 minutes in seconds
 let intervalId = null;
 
-function startQuiz() {
+function startQuiz() 
+{
   quizTime = localStorage.getItem("quizTime") || quizTime;
 
   displayQuestion();
   intervalId = setInterval(decrementTime, 1000);
 }
 
-function decrementTime() {
+function decrementTime() 
+{
   quizTime--;
   updateTimer();
 
@@ -114,7 +120,8 @@ function decrementTime() {
 
 }
 
-function updateTimer() {
+function updateTimer()
+ {
   const timerElement = document.getElementById("timer");
   const minutes = Math.floor(quizTime / 60);
   const seconds = quizTime % 60;
@@ -129,7 +136,8 @@ function endQuiz() {
   window.location.href = "result.html";
 }
 
-window.onload = function () {
+window.onload = function ()
+ {
   startQuiz();
 };
 
@@ -149,7 +157,8 @@ function displayName(){
 }
 displayName();
 
-function getExamType() {
+function getExamType() 
+{
   const userData = JSON.parse(sessionStorage.getItem("userse"));
   const positionn = userData.position;
 

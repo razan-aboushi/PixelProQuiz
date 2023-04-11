@@ -140,7 +140,7 @@ body {
   margin: 20px;
   padding: 20px;
   width: 500px;
-  min-height: 400px;
+  min-height: 440px;
   display: grid;
   grid-template-rows: 20px 50px 1fr 50px;
   border-radius: 10px;

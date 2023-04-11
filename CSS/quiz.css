@@ -141,13 +141,13 @@ h4 {
 }
 
 .options input[type="radio"]:checked + .checkmark {
-  background-color: #57c5b6;
-  border-color: #57c5b6;
+  background-color: #073167;
+  border-color: #4cb4a6;
 }
 
 /* Styling for next button */
 #next-button {
-  background-color: #57c5b6;
+  background-color: #073167 !important; 
   color: #fff;
   border-radius: 5px;
   border: none;

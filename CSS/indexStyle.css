@@ -31,8 +31,8 @@ body {
 }
 .navbar-nav li a:hover,
 .navbar-nav li.active a {
-  color: black !important;
-  background-color: white !important;
+  /* color: black !important; */
+  color: rgb(47, 157, 201) !important;
   border-radius: 5px !important;
   padding: 5px;
 }
@@ -56,7 +56,7 @@ body {
   background-color: rgba(220, 220, 220, 0.397);
   left: 15rem;
   top: 8rem;
-  font-size: 15px;
+  font-size: 16px;
   padding: 20px;
   border-radius: 20px;
 }

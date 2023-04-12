@@ -228,4 +228,81 @@
 
 div #errors1 {
 list-style-type: none;
+text-align: center;
+padding: 0;
 }
+
+#error-message1
+{
+  margin-top: 10px;
+  margin-left: 10px;
+
+
+}
+
+div #errors2 {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  }
+
+
+  #error-message2
+  {
+    margin-top: 5px;
+   margin-left: 17px;
+
+  }
+
+  div #errors3 {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+
+    }
+
+    #error-message3
+    {
+      margin-top: 5px;
+
+    }
+
+    div #errors4 {
+      list-style-type: none;
+      text-align: center;
+      padding: 0;
+
+      }
+
+      #error-message4
+      {
+        margin-top: 10px;
+
+      }
+
+
+      div #errors5 {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+
+        }
+
+        #error-message5
+        {
+          margin-top: 10px;
+        
+
+        }
+
+        div #errors6 {
+          list-style-type: none;
+          text-align: center;
+          padding: 0;
+
+          }
+          #error-message6
+          {
+            margin-top: 10px;
+  
+          }

@@ -20,8 +20,6 @@ body {
   }
 }
 
-
-
 .text-center {
   text-align: center;
 }
@@ -55,7 +53,7 @@ header {
 }
 
 .navbar-nav li a:hover {
-  background-color: #1b4b72;
+color: #1f5abf;
 }
 
 .ahome{

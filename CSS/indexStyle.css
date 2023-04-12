@@ -60,28 +60,7 @@ body {
   padding: 20px;
   border-radius: 20px;
 }
-/* #submit {
-  font-family: "Edu NSW ACT Foundation";
-  color: white;
-  font-size: large;
-} */
-/* #submit { */
-  /* background-color: #1f2131;
-  color: white;
-  border-radius: 0;
-  padding: 5px; */
-  /* cursor: pointer; */
-/* } */
-/* #submit:hover { */
-/* background-image: linear-gradient(45deg, #031b3b, #dfe9f2);
-  color: white;
-  background-color: white; */
-/* } */
-/* .anii {
-  border-radius: 24px 101px 23px 138px;
-  border: 8px solid #031b3b;
-  border-image: linear-gradient(black, grey, white) 1;
-} */
+
 .buu {
   border: none;
   color: #fff;
@@ -140,7 +119,7 @@ body {
   margin: 20px;
   padding: 20px;
   width: 500px;
-  min-height: 440px;
+  min-height: 460px;
   display: grid;
   grid-template-rows: 20px 50px 1fr 50px;
   border-radius: 10px;
@@ -325,3 +304,71 @@ button {
  button:active {
   transform: scale(0.9);
  }
+
+
+
+
+
+
+
+
+
+ .slide-up {
+  opacity: 0;
+  transform: translateY(50%);
+  animation: slideUpAnimation ease 1s forwards;
+}
+
+@keyframes slideUpAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% {
+    width:0;
+  }
+
+  25%{
+width:25%;
+  }
+
+  75%{
+
+    width:75%;
+  }
+
+  100%
+  {
+    width:100%;
+  }
+
+
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(49, 162, 199); }
+}

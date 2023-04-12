@@ -1,7 +1,6 @@
 const userInfo = JSON.parse(sessionStorage.getItem("userse")); //If have data in sessions
 
-function renderLoginAndSignUp() 
-{
+function renderLoginAndSignUp() {
   const ul = document.getElementById("ul");
 
   const listItem1 = document.createElement("li");
@@ -10,7 +9,6 @@ function renderLoginAndSignUp()
   link1.textContent = "Log in";
   listItem1.appendChild(link1);
   link1.style.textDecoration = "none";
-
 
   const listItem2 = document.createElement("li");
   const link2 = document.createElement("a");
@@ -26,15 +24,17 @@ function renderLoginAndSignUp()
 const imagePo = document.getElementById("imageP");
 let srcc = "";
 
-function renderUserNameAndLogOut() 
-{
+function renderUserNameAndLogOut() {
   const userName = userInfo.username;
   const ul = document.getElementById("ul");
   const well = document.getElementById("wel");
 
   imagePo.textContent;
   well.textContent = `WELCOME   ${userName.toUpperCase()} !`;
-  well.style.textAlign = "center";
+  well.style.border = "1px solid";
+  well.style.padding = "10px";
+  well.style.borderRadius = "10px";
+  well.style.backgroundColor = "rgba(255, 255, 255, 0.749)";
   const listItem1 = document.createElement("li");
   const link1 = document.createElement("a");
   link1.textContent = userName;
@@ -45,37 +45,31 @@ function renderUserNameAndLogOut()
   const link2 = document.createElement("a");
   link2.textContent = "Log Out";
 
-  link2.addEventListener("click", () =>  //when the user click on the log out , he will back to home page
-  {
-    sessionStorage.clear();
-    window.location.href = "index.html";
-  });
+  link2.addEventListener("click", () =>
+    //when the user click on the log out , he will back to home page
+    {
+      sessionStorage.clear();
+      window.location.href = "index.html";
+    }
+  );
 
   listItem2.appendChild(link2);
   ul.appendChild(listItem2);
 }
 
-if (userInfo) 
-
-{
+if (userInfo) {
   renderUserNameAndLogOut();
-} 
-else 
-{
+} else {
   renderLoginAndSignUp();
 }
 // console.log(userInfo.username);
 
 const button = document.getElementById("submit");
 
-button.addEventListener("click", function ()
- {
-  if (userInfo)
-   {
+button.addEventListener("click", function () {
+  if (userInfo) {
     window.location.href = "ExamWelcomepage.html";
-  } 
-  else 
-  {
+  } else {
     window.location.href = "registration.html";
   }
 });
@@ -83,16 +77,14 @@ button.addEventListener("click", function ()
 let aboutposition = " ";
 let description = "";
 
-function getExamTypeFromLocalStorage() 
-{
+function getExamTypeFromLocalStorage() {
   const user = JSON.parse(sessionStorage.getItem("userse"));
   const positionn = user.position;
   console.log(positionn);
 
   let examType;
 
-  switch (positionn)
-   {
+  switch (positionn) {
     case "2":
       examType = "HTML";
       aboutposition = " HTML Developer";
@@ -134,8 +126,7 @@ imagePo.src = srcc;
 // imagePo.style.height = "500px";
 // imagePo.style.marginLeft = "200px";
 imagePo.style.marginBottom = "84px";
-function setdata() 
-{
+function setdata() {
   const positionn = document.getElementById("aboutp");
   const des = document.getElementById("description");
   const examm = document.getElementById("exam");

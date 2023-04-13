@@ -41,7 +41,7 @@ body {
   color: #fff !important;
 }
 .secondry {
-  background-color: rgba(200, 186, 186, 0.456);
+  background-color: rgb(244, 236, 236);
 }
 .wel1 {
   display: flex;
@@ -154,7 +154,7 @@ body {
   content: "";
   width: 0%;
   height: 3px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgb(246 ,242, 242);
   transition: all 0.5s;
 }
 

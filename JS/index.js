@@ -57,9 +57,12 @@ function renderUserNameAndLogOut() {
   ul.appendChild(listItem2);
 }
 
-if (userInfo) {
+if (userInfo) 
+{
   renderUserNameAndLogOut();
-} else {
+} 
+else
+ {
   renderLoginAndSignUp();
 }
 // console.log(userInfo.username);
